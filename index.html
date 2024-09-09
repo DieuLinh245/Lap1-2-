@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab1</title>
+    <link rel="stylesheet" href="styles1.css">
+    <style>
+        .blue{
+            color: rgb(61, 124, 239);
+            background-color: rgb(155, 193, 237);
+            font-size: 34px;
+            
+            
+        }
+        .basic{
+            color:rgba(14, 145, 216, 0.614);
+}
+        .special{
+            color:rgb(70, 116, 169);
+            
+            
+        }
+        .pet-img {
+            float: right;
+            margin-left: 20px;
+            width: 250px;
+            height: auto;
+        }
+        table tr:nth-child(3),
+        table tr:nth-child(5),
+        table tr:nth-child(7)
+         {
+            background-color: #d3cdcd;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Dog D.Dog </h1>
+    <div>
+    <img src="anhconcho.jpg" alt="" class="pet-img">
+    <p class="blue"><b>About </b></p>
+    <p>Woof woof!</p>
+    <p>Hi, I'm Dog. I love <span class="basic"><b>User Interface Design.</b></span> </p>
+    <p class="blue"> <b>Courses</b></p>
+    <p>Here are some courses I've taken:</p>
+    <table border="1" width="500" align="left" cellspacing="0" >
+        <tr>
+            <th><b>Courses Number</b></th>
+            <th><b>Courses Title</b></th>
+            <th><b>Semester Taken</b></th>
+        </tr>
+        <tr>
+            <th colspan="3"> For Credit</th>
+        </tr>
+        <tr>
+            <td><span class="special"><b>6.813</b></span></td>
+            <td> <span class="basic">User Interface Design</span> </td>
+            <td> <span class="basic">Spring 2014</span> </td>
+        </tr>
+        <tr>
+            <td><span class="special"><b>6.034</b></span></td>
+            <td>Artificial Intelligence</td>
+            <td>Fall 2013</td>
+        </tr>
+        <tr>
+            <td><span class="special"><b>6.006</b></span></td>
+            <td>Introduction to Algorithims</td>
+            <td>Fall 2013</td>
+        </tr>
+        <tr>
+            <th colspan="3">Listener</th>
+        </tr>
+        <tr>
+            <td><span class="special">6.867</span></td>
+            <td>Machine Learning</td>
+            <td>Fall 2013</td>
+        </tr>
+        <tr>
+            <td><span class="special">6.830</span></td>
+            <td>Database Systems</td>
+            <td>Fall 2012</td>
+        </tr>
+    </table>
+    </div>
+    <div style="clear:both;">
+        <br>
+        <p class="blue"> <b>Interested</b></p>
+        <p>I am interested <b>HCL</b>,memes,and youtube videos.</p>
+    </div>
+    <div style="clear:both;">
+        <p class="blue"> <b>Submit Pet Information</b></p>
+        <p>Would love to know what kinds of pets you 'own' (you'll never own me). Submit below!</p>
+        <form action="/kqua_lab1">
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name">
+            <table>
+                <tr>
+                    <td><label for="Phylum">Phylum:</label></td>
+                    <td><input type="text" id="Phylum" name="Phylum"></td>
+                </tr>
+                <tr>
+                    <td> <label for="Gender">Gender:</label></td>
+                    <td><input type="text" id="Gender" name="Gender"></td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+    
+</body>
+</html>
